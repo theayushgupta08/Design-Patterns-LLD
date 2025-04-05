@@ -16,7 +16,7 @@ class SportsDriveStrategy(DriveStrategy):
 # Algorithm 2
 class NormalDriveStrategy(DriveStrategy):
     def drive(self):
-        print("This is a Normal Drive Startegy!")
+        print("This is a Normal Drive Startegy!")   # 3. Choosen NormalDriveStrategy Dynamically
 
 # Algorithm 3
 class XYZDriveStartegy(DriveStrategy):
@@ -32,6 +32,21 @@ class Vehicle:
     def letsDrive(self):
         self.myDriveStrategy.drive()
 
+class SportsBike(Vehicle):
+    def __init__(self, myDriveStrategy):
+        super().__init__(myDriveStrategy)
 
-mySportsBike = Vehicle(SportsDriveStrategy())  # 1. This object goes to myDriveStrategy
-mySportsBike.letsDrive()
+class GoodsServiceTruck(Vehicle):
+    def __init__(self, myDriveStrategy):
+        super().__init__(myDriveStrategy)
+
+
+# Main
+if __name__=="__main__":
+    # For Sports Bike
+    mySportsBike = SportsBike(SportsDriveStrategy())  # 1. This object goes to myDriveStrategy
+    mySportsBike.letsDrive()
+
+    # For Goods Service Truck
+    myGoodsServiceTruck = GoodsServiceTruck(NormalDriveStrategy())  # 1. This object goes to myDriveStrategy
+    myGoodsServiceTruck.letsDrive()
