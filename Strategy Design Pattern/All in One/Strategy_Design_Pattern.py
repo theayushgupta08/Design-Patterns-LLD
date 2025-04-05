@@ -1,4 +1,9 @@
-'''Startegy Design Pattern helps to define family of algorithms and choose among one dynamically according to situation.'''
+'''
+Startegy Design Pattern helps to define family of algorithms and choose among one dynamically according to situation.
+It is used when somewhere more than 1 similar code is found. Reduces duplicacy (redundancy).
+
+Such as there are 2 vehicles require Sports Drive Strategy. So created a seperate class for it to use by anyone who requires it.
+'''
 
 
 # Algorithm Type
