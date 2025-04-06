@@ -50,3 +50,26 @@ The **Observer Design Pattern** is a behavioral design pattern where an object (
 
 5. **News Subscription Service**:
    - Subscribers are notified whenever a new article or update is published in their subscribed category.
+
+
+---
+
+## Decorator Design Pattern
+
+The **Decorator Design Pattern** is a structural design pattern that allows you to dynamically add new functionality to an object without altering its structure. It achieves this by wrapping the original object with a series of decorator objects, each adding its own behavior.
+
+### Use Case:
+1. **Text Formatting**:
+   - A text editor can use decorators to add features like bold, italic, or underline formatting to text dynamically.
+
+2. **Logging System**:
+   - A logging framework can use decorators to add additional logging behaviors, such as writing logs to a file, sending logs to a remote server, or formatting log messages.
+
+3. **Graphical User Interface (GUI)**:
+   - GUI components like buttons or text fields can be decorated with additional features such as borders, shadows, or animations.
+
+4. **Data Encryption**:
+   - A data processing system can use decorators to add encryption or compression to data streams dynamically.
+
+5. **Coffee Shop Example**:
+   - A coffee shop billing system can use decorators to add additional features (e.g., milk, sugar, whipped cream) to a base coffee object, calculating the final cost dynamically.
