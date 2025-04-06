@@ -73,3 +73,47 @@ The **Decorator Design Pattern** is a structural design pattern that allows you 
 
 5. **Coffee Shop Example**:
    - A coffee shop billing system can use decorators to add additional features (e.g., milk, sugar, whipped cream) to a base coffee object, calculating the final cost dynamically.
+
+---
+
+## Factory Design Pattern
+
+The **Factory Design Pattern** is a creational design pattern that provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. It helps promote loose coupling by delegating the instantiation logic to factory classes.
+
+### Use Case:
+1. **Vehicle Manufacturing**:
+   - A factory can produce different types of vehicles (e.g., cars, bikes, trucks) based on the input provided.
+
+2. **Shape Creation**:
+   - A graphics application can use a factory to create different shapes (e.g., circles, rectangles, triangles) dynamically.
+
+3. **Notification System**:
+   - A notification factory can create different types of notifications (e.g., email, SMS, push notifications) based on user preferences.
+
+4. **Database Connection**:
+   - A factory can create database connections for different databases (e.g., MySQL, PostgreSQL, MongoDB) based on configuration.
+
+5. **Operating System File System**:
+   - A file system factory can create file system objects for different operating systems (e.g., Windows, Linux, macOS).
+
+---
+
+## Abstract Factory Design Pattern
+
+The **Abstract Factory Design Pattern** is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. It is often referred to as a "factory of factories."
+
+### Use Case:
+1. **UI Theme System**:
+   - An abstract factory can create UI components (e.g., buttons, text fields, checkboxes) for different themes (e.g., dark mode, light mode).
+
+2. **Cross-Platform Development**:
+   - An abstract factory can create platform-specific objects (e.g., Windows buttons, macOS buttons) for cross-platform applications.
+
+3. **Furniture Store**:
+   - A furniture factory can create families of related furniture items (e.g., Victorian chair, Victorian table, Modern chair, Modern table).
+
+4. **Game Development**:
+   - An abstract factory can create different types of game objects (e.g., medieval weapons, futuristic weapons) based on the game theme.
+
+5. **Cloud Service Providers**:
+   - An abstract factory can create APIs for different cloud providers (e.g., AWS, Azure, Google Cloud) to manage resources like storage, compute, and networking.
