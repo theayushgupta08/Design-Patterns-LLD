@@ -1,3 +1,9 @@
+'''
+Decorator Design Patter wraps up the object of the base class. Therefore also called Wrapper Pattern. 
+
+Eg - I have 1 base class with feature f1, If I have to add any new feature with the existing ones, I will wrap it with new object which contains feature f2, this way the final object will have features f1 and f2, and so on.
+'''
+
 class BasePizza:
     def cost(self):
         pass 
